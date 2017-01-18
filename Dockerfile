@@ -6,6 +6,7 @@ ADD Gemfile /event_scheduler/Gemfile
 ADD Gemfile.lock /event_scheduler/Gemfile.lock 
 RUN gem install rails
 RUN gem install bundler
+RUN gem install rmagick -v '2.16.0'
 RUN bundle install 
 ADD . /event_scheduler
 EXPOSE 3000
