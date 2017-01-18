@@ -18,3 +18,13 @@ development: &default
   host: <%= ENV["RDS_HOSTNAME"] %>
   port: 5432
 
+it:
+  adapter: postgresql
+  encoding: unicode
+  database: event_scheduler_it
+  pool: 5
+  username: postgres
+  password: 
+  host: postgres-d8573207
+  port: 5432
+
