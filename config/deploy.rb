@@ -1,12 +1,12 @@
 # config valid only for current version of Capistrano
-lock "3.7.0"
+lock "3.7.2"
 
 set :application, "event-scheduler"
 set :repo_url, "https://github.com/kuldeep-surendra/my_proj"
 set :rbenv_ruby, '2.3.1'
-set :default_env, {
-  "PASSENGER_INSTANCE_REGISTRY_DIR" => "/var/run/passenger-instreg"
-}
+# set :default_env, {
+#   "PASSENGER_INSTANCE_REGISTRY_DIR" => "/var/run/passenger-instreg"
+# }
 
 # set :bundle_gemfile, -> { release_path.join('Gemfile') }
 # set :bundle_dir, -> { shared_path.join('bundle') }

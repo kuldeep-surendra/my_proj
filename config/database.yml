@@ -4,8 +4,8 @@ production:
   database: event_scheduler
   pool: 5
   username: postgres
-  password: 
-  host: postgres-d8573207
+  password: password
+  host: localhost
   port: 5432
 
 development: &default
