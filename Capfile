@@ -11,6 +11,7 @@ require 'capistrano/rails/migrations'
 # require 'capistrano/rvm'
 require 'capistrano/rbenv'
 #require "capistrano/passenger"
+require 'capistrano/puma'
 
 
 # Load the SCM plugin appropriate to your project:

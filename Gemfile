@@ -35,6 +35,7 @@ gem 'capistrano', '~> 3.5'
 gem 'capistrano-bundler'  
 gem 'capistrano-rails'  
 gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
+gem 'capistrano3-puma'
 #gem 'capistrano-passenger', '>= 0.1.1'
 
 
