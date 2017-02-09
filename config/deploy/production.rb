@@ -9,8 +9,8 @@
 
 set :stage, :production
 set :branch, :master
-set :deploy_to, '/home/centos/event-scheduler/'
-set :user, "centos"
+set :deploy_to, '/home/deploy/event-scheduler/'
+set :user, "deploy"
 
 # role-based syntax
 # ==================
@@ -20,10 +20,10 @@ set :user, "centos"
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
-role :app, %w{centos@35.160.21.155}
-role :web, %w{centos@35.160.21.155}
-role :db,  %w{centos@35.160.21.155}
-server '35.160.21.155', roles: %w{:web, :app, :db}, user: 'centos'
+role :app, %w{deploy@35.160.21.155}
+role :web, %w{deploy@35.160.21.155}
+role :db,  %w{deploy@35.160.21.155}
+server '35.160.21.155', roles: %w{:web, :app, :db}, user: 'deploy'
 
 
 

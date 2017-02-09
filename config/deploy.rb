@@ -3,7 +3,7 @@
 
 # set :application, "event-scheduler"
 # set :repo_url, "https://github.com/kuldeep-surendra/my_proj"
-# set :rbenv_ruby, '2.3.1'
+set :rbenv_ruby, '2.3.1'
 # # set :default_env, {
 # #   "PASSENGER_INSTANCE_REGISTRY_DIR" => "/var/run/passenger-instreg"
 # # }
@@ -64,11 +64,11 @@
 
 
 # Change these
-server 'centos@35.160.21.155', port: 7171, roles: [:web, :app, :db], primary: true
+server 'deploy@35.160.21.155', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/kuldeep-surendra/my_proj.git'
 set :application,     'event-scheduler'
-set :user,            'centos'
+set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
